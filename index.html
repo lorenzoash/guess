@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guess Test</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook to provide a "view in browser" message */
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing */
+
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up */
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* RESET STYLES */
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-color: black;
+        }
+
+        body,
+        html {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+
+        .appleBody a {
+            color: #68440a;
+            text-decoration: none;
+        }
+
+        .appleFooter a {
+            color: #999999;
+            text-decoration: none;
+        }
+
+
+
+        /* MOBILE STYLES */
+
+        @media screen and (max-width: 770px) {
+
+            /* ADJUSTS LAYOUT OF LOGO IMAGE */
+            td[class="logo"] {
+                text-align: left;
+                padding: 20px 0 20px 0 !important;
+            }
+
+            td[class="logo"] img {
+                margin: 0 auto !important;
+            }
+
+            /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+            td[class="mobile-hide"] {
+                display: none;
+            }
+
+            img[class="mobile-hide"] {
+                display: none !important;
+            }
+
+            img[class="img-max"] {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            /* FULL-WIDTH TABLES */
+            table[class="responsive-table"] {
+                width: 100% !important;
+            }
+            /*  */
+            table[class="responsive-table-cell"] {
+                width: 49% !important;
+            }
+
+            span[class="price"] {
+                font-style: italic;
+            }
+
+
+
+            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+            td[class="padding"] {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            td[class="padding-copy"] {
+                padding: 10px 5% 10px 5% !important;
+                text-align: center !important;
+                font-size: 20px !important;
+            }
+
+            td[class="padding-meta"] {
+                padding: 30px 5% 0px 5% !important;
+                text-align: center;
+            }
+
+            td[class="no-pad"] {
+                padding: 0 0 20px 0 !important;
+            }
+
+            td[class="no-padding"] {
+                padding: 0 !important;
+            }
+
+            td[class="section-padding"] {
+                padding: 50px 15px 50px 15px !important;
+            }
+
+            td[class="section-padding-bottom-image"] {
+                padding: 50px 15px 0 15px !important;
+            }
+
+            /* ADJUST BUTTONS ON MOBILE */
+            td[class="mobile-wrapper"] {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            table[class="mobile-button-container"] {
+                margin: 0 auto;
+                width: 100% !important;
+            }
+
+            a[class="mobile-button"] {
+                width: 80% !important;
+                padding: 15px !important;
+                border: 0 !important;
+                font-size: 16px !important;
+            }
+
+            table[class="responsive-table-cell mobile-none"] {
+                display: none;
+            }
+
+            table[class="responsive-table responsive-button"] {
+                width: 75% !important;
+            }
+            span[class="appleFooter best-seller"] {
+                font-size: 80% !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+    <!-- HEADER -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+        <tr>
+            <td bgcolor="#ffffff" align="center" style="padding: 70px 15px 70px 15px;" class="section-padding">
+                <table border="0" cellpadding="0" cellspacing="0" width="900" class="responsive-table">
+                    <tr>
+                        <td>
+                            <!-- TITLE SECTION AND COPY -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" style="font-size: 55px; font-family: 'Times New Roman', Times, serif; color: #333333;" class="padding-copy">CURRENTLY</br>TRENDING EVERYWHERE</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- THREE COLUMN SECTION -->
+                            <!-- THREE COLUMNS 1-->
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td valign="top" style="padding: 0;" class="mobile-wrapper">
+                                        <!-- COLUMN 1 -->
+                                        <!-- LEFT COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="left" class="responsive-table-cell">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/off-the-shoulder-smocked-top/w8fp0rk0t09?color=f1h2" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W8FP0RK0T09-F1H2?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid images" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>Title Line 2</br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- MIDDLE COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="right" class="responsive-table-cell">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/charged-up-logo-bodysuit/w82i69r49a2?color=jblk" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W82I69R49A2-JBLK?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid structures" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>Title Line 2</br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- RIGHT COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="right" class="responsive-table-cell">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/driane-strappy-lace-bodysuit/w82p21r7e01?color=g012" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W82P21R7E01-G012?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; "
+                                                                        alt="Fluid structures" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>Title Line 2</br>
+                                                                <span style="color:#666666; font-style: italic;">$68.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- COLUMN 2 -->
+                                        <!-- LEFT COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="left" class="responsive-table-cell">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/amor-panther-tee/w74i0gr3542" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W74I0GR3542-G009?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid images" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>
+                                                                </br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+                                                                <span class="appleBody">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- RIGHT COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="left" class="responsive-table-cell">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/clouis-floral-button-down-shirt/w83h44w70q0" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W83H44W70Q0-PZ16?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; "
+                                                                        alt="Fluid structures" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>Title Line 2</br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- MIDDLE COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="right" class="responsive-table-cell">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/jaden-embroidered-faux-leather-moto-jacket/w82n20rad70" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W82N20RAD70-JBLK?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid structures" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>Title Line 2</br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- COLUMN 3 -->
+                                        <!-- LEFT COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="left" class="responsive-table-cell mobile-none">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/ivonne-faux-leather-jacket/w62l20w72y0?color=g110" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W62L20W72Y0-G110?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid images" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>
+                                                                </br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+                                                                <span class="appleBody">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- RIGHT COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="right" class="responsive-table-cell mobile-none">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/metallic-slouchy-tank/w83r67r24f0" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W83R67R24F0-GDMT?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid structures" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>Title Line 2</br>
+                                                                <span style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- MIDDLE COLUMN -->
+                                        <table cellpadding="0" cellspacing="0" border="0" width="33%" align="right" class="responsive-table-cell mobile-none">
+                                            <tr>
+                                                <td style="padding: 20px 0 40px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="middle">
+                                                                <a href="https://shop.guess.com/en/catalog/view/women/view-all/rhinestone-triangle-logo-tank/w74i91r0so1?color=g009" target="_blank">
+                                                                    <img src="https://s7d5.scene7.com/is/image/Guess/W74I91R0SO1-G009?$2014_G_xxlarge$" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px;"
+                                                                        alt="Fluid structures" border="0" class="img-max">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: black; font-size: 14px;" bgcolor="#ffffff">Product Title</br>
+                                                                </br>
+                                                                <span class="price" style="color:#666666; font-style: italic;">$128.00</span>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;"
+                                                                bgcolor="#ffffff">
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <!-- BULLETPROOF BUTTON -->
+    <a href="https://shop.guess.com/en" target="_blank" style=" color: black; text-decoration: none;">
+        <table style="position: relative; bottom: 70px;" width="450" border="1px" cellspacing="0" cellpadding="0" align="center"
+            class="responsive-table responsive-button">
+            <tr>
+                <td align="center" valign="middle" style="font-size: 18px; line-height: 78px; font-family: Helvetica, Arial, sans-serif;">
+                    <span class="appleFooter best-seller" style="font-weight: bold; letter-spacing: 2px;">SHOP BEST SELLERS</span>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </a>
+
+
+</body>
+
+</html>
